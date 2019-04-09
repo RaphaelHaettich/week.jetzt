@@ -65,3 +65,10 @@ typings/
 
 # we do not need js
 *.js
+
+# reasonml
+.merlin
+/lib/*
+!/lib/js/*
+/bundledOutputs/
+.bsb.lock
