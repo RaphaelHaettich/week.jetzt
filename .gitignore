@@ -62,3 +62,6 @@ typings/
 
 # firebase
 .firebase
+
+# we do not need js
+*.js
