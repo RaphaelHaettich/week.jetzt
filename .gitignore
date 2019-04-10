@@ -68,8 +68,7 @@ src/**/*.js
 
 # reasonml
 .merlin
-/lib/*
-!/lib/js/*
+lib
 /bundledOutputs/
 .bsb.lock
 build
