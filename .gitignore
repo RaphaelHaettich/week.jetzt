@@ -65,7 +65,6 @@ typings/
 
 # we do not need js
 src/**/*.js
-build
 
 # reasonml
 .merlin
@@ -73,3 +72,4 @@ build
 !/lib/js/*
 /bundledOutputs/
 .bsb.lock
+build
