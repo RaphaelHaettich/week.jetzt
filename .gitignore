@@ -64,7 +64,8 @@ typings/
 .firebase
 
 # we do not need js
-*.js
+src/**/*.js
+build
 
 # reasonml
 .merlin
