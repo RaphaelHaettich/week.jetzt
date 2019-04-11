@@ -1,4 +1,3 @@
-[@bs.val] external alert : string => unit = "alert";
 let component = ReasonReact.statelessComponent("Weeks");
 let make = (_children) => {
   ...component,
