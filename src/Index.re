@@ -1,1 +1,1 @@
-ReactDOMRe.renderToElementWithId(<Weeks />, "root");
+ReactDOMRe.renderToElementWithId(<App />, "root");
