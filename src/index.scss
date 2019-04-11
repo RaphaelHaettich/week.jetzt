@@ -1,1 +1,9 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+// helpers
+@import '../node_modules/normalize.css/normalize.css';
+
+// components
 @import 'components/Weeks/Weeks';
