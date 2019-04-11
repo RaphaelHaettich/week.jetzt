@@ -1,11 +1,15 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const outputDir = path.join(__dirname, 'build/');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const extractStyle = new ExtractTextPlugin({ filename: "[name].css" });
 
 const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  entry: './src/Index.bs.js',
+  entry: {
+    index: ["./src/Index.bs.js", "./src/index.scss"]
+  },
   mode: isProd ? 'production' : 'development',
   output: {
     path: outputDir,
@@ -15,8 +19,26 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       inject: false
-    })
+    }),
+    extractStyle
   ],
+  module: {
+    rules: [
+      {
+        test: /\.(scss|css)$/,
+        use: extractStyle.extract({
+          use: [
+            {
+              loader: "css-loader"
+            },
+            {
+              loader: "sass-loader"
+            }
+          ]
+        })
+      }
+    ]
+  },
   devServer: {
     compress: true,
     contentBase: outputDir,
