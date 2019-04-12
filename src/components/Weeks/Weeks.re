@@ -31,7 +31,7 @@ let make = (_children) => {
         | None => Js.log("Error clearing interval");
     },
 
-    render: self =>
+    render: (self) =>
         <div className="Weeks">
             <div className="Weeks__week-number">
                 {ReasonReact.string(Js.Float.toString(WeekOfYear.getNumberOfWeek(Js.Date.make())))}
