@@ -5,5 +5,9 @@ body {
 // helpers
 @import '../node_modules/normalize.css/normalize.css';
 
+// config
+@import './config/scss/variables';
+
 // components
-@import 'components/Weeks/Weeks';
+@import './App';
+@import './components/Weeks/Weeks';
