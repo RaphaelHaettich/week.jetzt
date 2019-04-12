@@ -10,13 +10,13 @@ let make = (_children) => {
     ...component,
 
     initialState: () => {
-        time: Js.Date.make()|>Js.Date.toLocaleString,
+        time: Js.Date.make() |> Js.Date.toLocaleString,
         timerId: ref(None),
     },
 
     reducer: (action, state) =>
         switch(action) {
-        | Update => ReasonReact.Update({...state, time: Js.Date.make()|>Js.Date.toLocaleString})
+        | Update => ReasonReact.Update({...state, time: Js.Date.make() |> Js.Date.toLocaleString})
         },
 
     didMount: (self) => {
