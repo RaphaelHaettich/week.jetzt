@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const outputDir = path.join(__dirname, 'build/');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const extractStyle = new ExtractTextPlugin({ filename: "[name].css" });
+const extractStyle = new ExtractTextPlugin({ filename: "index.css" });
 
 const isProd = process.env.NODE_ENV === 'production';
 
