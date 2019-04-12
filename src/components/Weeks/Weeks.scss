@@ -2,7 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    font-size: 15em;
-    color: $color-white;
+    flex-direction: column;
+    height: 100%;
+    color: $color-white; 
+    &__week-number {
+        font-size: 15em;
+    }
 }
