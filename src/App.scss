@@ -3,6 +3,18 @@
     background: linear-gradient(
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)
-      ), url("http://source.unsplash.com/collection/4643953/1920") no-repeat center center fixed;
+      ), url("http://source.unsplash.com/collection/4643953/756x1344") no-repeat center center fixed;
     background-size: cover;
+    @media #{$break-landscape} {
+        background-image: url("http://source.unsplash.com/collection/4643953/1344x756");
+    }
+    @media #{$break-min-tablet-portrait} {
+        background-image: url("http://source.unsplash.com/collection/4643953/907x1612");
+    }
+    @media #{$break-min-tablet-landscape} {
+        background-image: url("http://source.unsplash.com/collection/4643953/1612x907");
+    }
+    @media #{$break-min-desktop} {
+        background-image: url("http://source.unsplash.com/collection/4643953/1920x1080");
+    }
 }
