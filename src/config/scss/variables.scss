@@ -3,6 +3,9 @@ $color-white: #ffffff;
 $color-grey: #aaaaaa;
 $color-opague-black-2: rgba(0, 0, 0, 0.2);
 
+// linear gradients
+$lg-opague-black-2: linear-gradient($color-opague-black-2, $color-opague-black-2);
+
 // media-queries
 $break-landscape: '(orientation:landscape)';
 $break-min-tablet-portrait: '(min-width:600px) and (orientation:portrait)';
