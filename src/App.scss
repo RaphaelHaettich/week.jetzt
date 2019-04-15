@@ -1,20 +1,20 @@
 .root {
     height: 100vh;
     background: linear-gradient(
-        $background-opague-black,
-        $background-opague-black
+        $color-opague-black-2,
+        $color-opague-black-2
       ), url("http://source.unsplash.com/collection/4643953/756x1344") no-repeat center center fixed;
     background-size: cover;
     @media #{$break-landscape} {
-        background-image: linear-gradient($background-opague-black, $background-opague-black), url("http://source.unsplash.com/collection/4643953/1344x756");
+        background-image: linear-gradient($color-opague-black-2, $color-opague-black-2), url("http://source.unsplash.com/collection/4643953/1344x756");
     }
     @media #{$break-min-tablet-portrait} {
-        background-image: linear-gradient($background-opague-black, $background-opague-black), url("http://source.unsplash.com/collection/4643953/907x1612");
+        background-image: linear-gradient($color-opague-black-2, $color-opague-black-2), url("http://source.unsplash.com/collection/4643953/907x1612");
     }
     @media #{$break-min-tablet-landscape} {
-        background-image: linear-gradient($background-opague-black, $background-opague-black), url("http://source.unsplash.com/collection/4643953/1612x907");
+        background-image: linear-gradient($color-opague-black-2, $color-opague-black-2), url("http://source.unsplash.com/collection/4643953/1612x907");
     }
     @media #{$break-min-desktop} {
-        background-image: linear-gradient($background-opague-black, $background-opague-black), url("http://source.unsplash.com/collection/4643953/1920x1080");
+        background-image: linear-gradient($color-opague-black-2, $color-opague-black-2), url("http://source.unsplash.com/collection/4643953/1920x1080");
     }
 }
