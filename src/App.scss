@@ -1,20 +1,12 @@
 .root {
-    @include unsplash-background-image("756", "1344");
+    @include unsplash-background-image-media-query("756", "1344");
+    @include unsplash-background-image-media-query("1344", "756", $break-landscape);
+    @include unsplash-background-image-media-query("907", "1612", $break-min-tablet-portrait);
+    @include unsplash-background-image-media-query("1612", "907", $break-min-tablet-landscape);
+    @include unsplash-background-image-media-query("1920", "1080", $break-min-desktop);
     position: relative;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    @media #{$break-landscape} {
-        @include unsplash-background-image("1344", "756");
-    }
-    @media #{$break-min-tablet-portrait} {
-        @include unsplash-background-image("907", "1612");
-    }
-    @media #{$break-min-tablet-landscape} {
-        @include unsplash-background-image("1612", "907");
-    }
-    @media #{$break-min-desktop} {
-        @include unsplash-background-image("1920", "1080");
-    }
 }
