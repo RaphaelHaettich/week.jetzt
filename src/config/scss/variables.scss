@@ -1,7 +1,9 @@
 // colors
+$color-black: #000000;
 $color-white: #ffffff;
 $color-grey: #aaaaaa;
 $color-opague-black-2: rgba(0, 0, 0, 0.2);
+$color-opague-white-75: rgba(255, 255, 255, 0.5);
 
 // linear gradients
 $lg-opague-black-2: linear-gradient($color-opague-black-2, $color-opague-black-2);
