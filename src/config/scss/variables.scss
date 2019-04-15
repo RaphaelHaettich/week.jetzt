@@ -7,3 +7,8 @@ $color-grey: #aaaaaa;
 $background-blue: #336699;
 $background-light-blue: #06AED5;
 
+// media-queries
+$break-landscape: '(orientation:landscape)';
+$break-min-tablet-portrait: '(min-width:600px) and (orientation:portrait)';
+$break-min-tablet-landscape: '(min-width:850px) and (orientation:landscape)';
+$break-min-desktop: '(min-width:1025px)';
