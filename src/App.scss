@@ -1,17 +1,17 @@
 .root {
     height: 100vh;
-    background: #{$lg-opague-black-2}, url("http://source.unsplash.com/collection/4643953/756x1344") no-repeat center center fixed;
+    @include unsplash-background("756", "1344");
     background-size: cover;
     @media #{$break-landscape} {
-        background-image: #{$lg-opague-black-2}, url("http://source.unsplash.com/collection/4643953/1344x756");
+        @include unsplash-background("1344", "756");
     }
     @media #{$break-min-tablet-portrait} {
-        background-image: #{$lg-opague-black-2}, url("http://source.unsplash.com/collection/4643953/907x1612");
+        @include unsplash-background("907", "1612");
     }
     @media #{$break-min-tablet-landscape} {
-        background-image: #{$lg-opague-black-2}, url("http://source.unsplash.com/collection/4643953/1612x907");
+        @include unsplash-background("1612", "907");
     }
     @media #{$break-min-desktop} {
-        background-image: #{$lg-opague-black-2}, url("http://source.unsplash.com/collection/4643953/1920x1080");
+        @include unsplash-background("1920", "1080");
     }
 }
